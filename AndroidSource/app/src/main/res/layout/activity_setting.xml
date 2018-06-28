@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/colorAppBg"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/textHomeHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAppBg"
+        android:gravity="center"
+        android:text="@string/account_setting"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/back_select"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/HeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/textHomeHead"
+        android:background="@color/colorDivider"/>
+
+    <Button
+        android:id="@+id/btnAvatarSetting"
+        android:layout_width="match_parent"
+        android:layout_below="@id/HeadDivider"
+        android:layout_height="wrap_content"
+        android:text="@string/avatar_setting"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_below="@id/btnAvatarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signout"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

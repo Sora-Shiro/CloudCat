@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/homeHeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorLightDivider"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutHome"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/homeHeadDivider"
+        android:background="@drawable/item_btn"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/imgHead"
+            android:layout_alignTop="@id/imgHead"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imgHead"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/init_name"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btnChangeFollow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imgHead"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/imgHead"
+            android:layout_marginEnd="10dp"
+            android:text="关注"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/homeBottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutHome"
+        android:background="@color/colorLightDivider"
+        />
+</RelativeLayout>

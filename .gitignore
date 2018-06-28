@@ -1,0 +1,12 @@
+*.iml
+.gradle
+AndroidSource/local.properties
+AndroidSource/.idea
+.DS_Store
+AndroidSource/build
+AndroidSource/captures
+.externalNativeBuild
+AndroidSource/app/build
+
+*.pyc
+PythonServer/.idea

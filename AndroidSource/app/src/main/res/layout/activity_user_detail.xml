@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBg">
+
+    <RelativeLayout
+        android:id="@+id/layoutUserDetailHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:background="@drawable/back_select"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textUserDetailHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailHeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutUserDetailHead"
+        android:background="@color/colorDivider"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutUserDetailThumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailHeadDivider"
+        android:background="@drawable/item_btn"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgMeHead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textMeName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/imgMeHead"
+            android:layout_alignTop="@id/imgMeHead"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imgMeHead"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="tombkeeper"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnChangeFollow"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/imgMeHead"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/imgMeHead"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:text="@string/_what"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/layoutThumbDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutUserDetailThumb"
+        android:background="@color/colorDivider"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutPosterNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutThumbDivider"
+        android:background="@drawable/item_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/textPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="动态"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textPosterNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textPoster"
+            android:layout_alignTop="@id/textPoster"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/textPoster"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="@string/_what"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/posterDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutPosterNum"
+        android:background="@color/colorDivider"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutFollowNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/posterDivider"
+        android:background="@drawable/item_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/textFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="关注"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textFollowNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textFollow"
+            android:layout_alignTop="@id/textFollow"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/textFollow"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="@string/_what"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/followDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutFollowNum"
+        android:background="@color/colorDivider"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutFollowingNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followDivider"
+        android:background="@drawable/item_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/textFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="粉丝"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textFollowingNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textFollowing"
+            android:layout_alignTop="@id/textFollowing"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/textFollowing"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="@string/_what"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/followingDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutFollowingNum"
+        android:background="@color/colorDivider"/>
+
+</RelativeLayout>

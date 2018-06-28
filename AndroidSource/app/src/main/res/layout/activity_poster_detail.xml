@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAppBg"
+                android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/layoutDetailHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back_select"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textDetailHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="动态详情"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailHeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutDetailHead"
+        android:background="@color/colorDivider"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_btn"
+            android:text="转发"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/btnComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_btn"
+            android:text="评论"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_btn"
+            android:text="赞"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/layoutBtn"
+        android:background="@color/colorDivider"/>
+
+    <com.sorashiro.cloudcat.recyclerview.MyRecyclerView
+        android:id="@+id/listPosterDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnDivider"
+        android:layout_below="@id/detailHeadDivider"
+        android:scrollbars="vertical"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabDetailInteractHide"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/detailHeadDivider"
+        android:background="@color/colorAppBg"
+        android:visibility="invisible"
+        app:tabBackground="@color/colorAppBg"
+        app:tabIndicatorColor="@color/colorPrimaryLight"
+        app:tabSelectedTextColor="@color/colorSecondaryText"
+        app:tabTextColor="@color/colorSecondaryText"/>
+
+</RelativeLayout>

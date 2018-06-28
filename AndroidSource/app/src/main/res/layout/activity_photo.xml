@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBg">
+
+    <RelativeLayout
+        android:id="@+id/layoutPhotoHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:background="@drawable/back_select"
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textPhotoHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="查看图片"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/save_select"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/photoHeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutPhotoHead"
+        android:background="@color/colorDivider"/>
+
+   <com.github.chrisbanes.photoview.PhotoView
+       android:id="@+id/imgPhoto"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/photoHeadDivider"
+       android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

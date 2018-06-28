@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBg">
+
+    <RelativeLayout
+        android:id="@+id/layoutPosterHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_select"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textPosterHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户动态"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/posterHeadDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layoutPosterHead"
+        android:background="@color/colorDivider"/>
+
+    <com.sorashiro.cloudcat.recyclerview.MyRecyclerView
+        android:id="@+id/listUserPoster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/posterHeadDivider"
+        android:scrollbars="vertical"
+        >
+    </com.sorashiro.cloudcat.recyclerview.MyRecyclerView>
+
+</RelativeLayout>
